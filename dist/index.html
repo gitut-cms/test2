@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gitut</title>
+    <meta name="description" content="منصة ويب متكاملة تعمل كسوق خدمي يربط بين الجمهور العام ومقاهي الإنترنت لتسهيل وأتمتة خدمات المستندات." />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gitut.com/">
+    <meta property="fb:app_id" content="966242223397117">
+    <meta property="og:title" content="Gitut">
+    <meta property="og:description" content="منصة ويب متكاملة تعمل كسوق خدمي يربط بين الجمهور العام ومقاهي الإنترنت لتسهيل وأتمتة خدمات المستندات.">
+    <meta property="og:image" content="https://file.gitut.com/data/image/gitut-og-main.png">
+    <meta property="og:image:secure_url" content="https://file.gitut.com/data/image/gitut-og-main.png">
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Gitut" />
+    <meta property="og:locale" content="ar_AR" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gitut">
+    <meta name="twitter:description" content="منصة ويب متكاملة تعمل كسوق خدمي يربط بين الجمهور العام ومقاهي الإنترنت لتسهيل وأتمتة خدمات المستندات.">
+    <meta name="twitter:image" content="https://file.gitut.com/data/image/gitut-og-main.png">
+    
+    <!-- GrapesJS Assets -->
+    <link rel="stylesheet" href="https://unpkg.com/grapesjs/dist/css/grapes.min.css">
+    <script src="https://unpkg.com/grapesjs"></script>
+    <script src="https://unpkg.com/grapesjs-preset-webpage"></script>
+
+    <!-- Preconnect to required origins for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
+
+    <!-- Asynchronously load Google Fonts to prevent render-blocking -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet"></noscript>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.1?plugins=typography"></script>
+    
+    <!-- Quill Editor CSS -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+    <!-- PDF Generation Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <style>
+      /* @import for Google Fonts was moved to <link> tags in <head> for performance */
+      body {
+        font-family: 'Cairo', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      button, input, select, textarea {
+        font-family: inherit;
+      }
+      @media print {
+        body * {
+          visibility: hidden;
+        }
+        #printable-id, #printable-id * {
+          visibility: visible;
+        }
+        #printable-id {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .fade-in-text {
+        animation: fadeIn 0.8s ease-in-out forwards;
+      }
+      /* GrapesJS Container Styles */
+      #gjs {
+        border: 3px solid #dee2e6;
+        border-radius: 0.5rem;
+        height: 100%;
+        overflow: hidden;
+      }
+      /* RTL Overrides for GrapesJS UI elements to ensure they display correctly */
+      .gjs-pn-panel {
+          direction: ltr;
+      }
+      .gjs-pn-buttons {
+          justify-content: flex-start;
+      }
+      .gjs-rte-toolbar {
+          direction: ltr;
+      }
+      .gjs-am-file-uploader, .gjs-am-assets-cont {
+          direction: ltr;
+      }
+      /* Logo Animation */
+      .char-flipper {
+        display: inline-block;
+        min-width: 1ch; /* Reserve space for the character */
+      }
+      .char-flipper.swapping {
+        animation: char-swap 0.5s ease-in-out;
+      }
+      @keyframes char-swap {
+        0% { opacity: 1; transform: translateY(0); }
+        45% { opacity: 0; transform: translateY(8px); }
+        55% { opacity: 0; transform: translateY(-8px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      /* Quill Editor Styles - Scoped to .ql-snow theme */
+      .ql-snow .ql-editor {
+        min-height: 120px;
+        font-size: 1rem;
+        direction: rtl;
+        text-align: right;
+      }
+      .ql-toolbar.ql-snow {
+        border-top-left-radius: 0.375rem;
+        border-top-right-radius: 0.375rem;
+        border-color: #d1d5db;
+        background-color: #f9fafb;
+      }
+      .ql-container.ql-snow {
+        border-bottom-left-radius: 0.375rem;
+        border-bottom-right-radius: 0.375rem;
+        border-color: #d1d5db;
+      }
+      /* Remove padding for display-only editors inside prose */
+      .prose .ql-editor, .ql-editor.\!p-0 {
+        padding: 0;
+        min-height: auto;
+      }
+      .ql-snow .ql-editor p, .ql-snow .ql-editor ol, .ql-snow .ql-editor ul, .ql-snow .ql-editor pre, .ql-snow .ql-editor blockquote, .ql-snow .ql-editor h1, .ql-snow .ql-editor h2, .ql-snow .ql-editor h3, .ql-snow .ql-editor h4, .ql-snow .ql-editor h5, .ql-snow .ql-editor h6 {
+        margin-bottom: 0.75em;
+      }
+      .line-clamp-2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      .compact-prose p, .compact-prose ul, .compact-prose ol {
+          margin-top: 0;
+          margin-bottom: 0.25em;
+      }
+      /* Custom link color for content */
+      .prose a {
+        color: #16a34a; /* Tailwind's green-600 */
+      }
+      .prose a:hover {
+        color: #15803d; /* Tailwind's green-700 */
+      }
+      /* GrapesJS Light Theme Overrides */
+      .gjs-one-bg { background-color: #f9fafb; color: #1f2937; }
+      .gjs-two-bg { background-color: #f3f4f6; }
+      .gjs-three-bg { background-color: #fff; color: #374151; }
+      .gjs-four-color, .gjs-four-color-h:hover { color: #16a34a; }
+      .gjs-border, .gjs-border-color { border-color: #e5e7eb; }
+      /* Panels */
+      .gjs-pn-panel { background-color: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+      .gjs-pn-buttons { background-color: transparent; }
+      .gjs-pn-btn { color: #4b5563; }
+      .gjs-pn-btn.gjs-pn-active { color: #16a34a; box-shadow: inset 0 -2px 0 0 #16a34a; }
+      .gjs-pn-btn:hover { color: #111827; }
+      /* Right sidebar (Style/Layer/Block Manager) */
+      .gjs-right-sidebar, .gjs-layer, .gjs-sm-sector, .gjs-clm-tags, .gjs-am-assets-cont, .gjs-block {
+          background-color: #f9fafb;
+          border-color: #e5e7eb;
+          color: #374151;
+      }
+      .gjs-sm-label, .gjs-layer-title, .gjs-block-label, .gjs-clm-tag-label, h1.gjs-am-title {
+          color: #1f2937;
+      }
+      .gjs-sm-layer-label { background-color: #f3f4f6; }
+      input.gjs-field, select.gjs-field { background-color: #fff; color: #111827; border: 1px solid #d1d5db; }
+      .gjs-field:focus { border-color: #16a34a; box-shadow: 0 0 0 1px #16a34a; }
+      /* Canvas */
+      .gjs-cv-canvas { background-color: #fff; color: #333; }
+      .gjs-frame-wrapper { background-color: #e9ecef; }
+      /* Modals */
+      .gjs-mdl-container { background-color: #fff; color: #333; }
+      .gjs-mdl-header, .gjs-mdl-footer { background-color: #f9fafb; }
+      .gjs-btn-prim { background-color: #16a34a; }
+      .gjs-btn-sec { background-color: #e5e7eb; color: #1f2937; }
+      /* Asset Manager */
+      .gjs-am-file-uploader, .gjs-am-assets-cont { background-color: #f3f4f6; }
+      .gjs-am-asset { background-color: #fff; }
+    </style>
+    
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://apis.google.com/js/api.js" async defer></script>
+
+<link rel="stylesheet" href="/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "firebase/": "https://aistudiocdn.com/firebase@^12.6.0/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.1",
+    "jszip": "https://aistudiocdn.com/jszip@^3.10.1",
+    "file-saver": "https://aistudiocdn.com/file-saver@^2.0.5",
+    "mammoth": "https://aistudiocdn.com/mammoth@^1.11.0",
+    "react-icons/": "https://aistudiocdn.com/react-icons@^5.5.0/",
+    "xlsx": "https://aistudiocdn.com/xlsx@^0.18.5",
+    "jose": "https://aistudiocdn.com/jose@^6.1.2",
+    "react-quill": "https://aistudiocdn.com/react-quill@^2.0.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index.js"></script>
+</head>
+  <body class="bg-gray-100">
+    <div id="root"></div>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+    <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/gun/gun.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gun/sea.js"></script>
+  </body>
+</html>
