@@ -6862,7 +6862,7 @@ document.addEventListener('DOMContentLoaded', function() {
                      <div class="mb-6">${S2(s.find(g=>g.placement==="SERVICE_DETAIL_MAIN_BOTTOM"))}</div>
                     <div class="flex flex-col sm:flex-row gap-4">
                         <a href="/view/${t.id}/" class="bg-red-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-red-700">معاينة</a>
-                        <a href="/${a}/go-to-site/internal-form/?redirect=%2Fpublic-form%2F${t.id}%2F&name=${encodeURIComponent(`تعبئة نموذج: ${t.name}`)}" class="bg-green-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-green-700">تعبئة/تحميل</a>
+                        <a href="/${a}/go-to-site/internal-form/?redirect=%2Fpublic-form%2F${t.slug||t.id}%2F&name=${encodeURIComponent(`تعبئة نموذج: ${t.name}`)}" class="bg-green-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-green-700">تعبئة/تحميل</a>
                     </div>
                 </div>
             </div>
