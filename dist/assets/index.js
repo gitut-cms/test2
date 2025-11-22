@@ -6532,12 +6532,12 @@ document.addEventListener('DOMContentLoaded', function() {
             ${n}
             ${v}
         </div>
-    `,y=((C=s==null?void 0:s.seo)==null?void 0:C[r])||((S=s==null?void 0:s.seo)==null?void 0:S.default),_=c||"https://file.gitut.com/data/image/icon.png",x=`<script async src="https://www.googletagmanager.com/gtag/js?id=G-2BKKWGCXWX"><\/script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-2BKKWGCXWX');<\/script>`,w=l?Uye(l.url,l.title,l.description):"";return`<!DOCTYPE html>
+    `,y=((C=s==null?void 0:s.seo)==null?void 0:C[r])||((S=s==null?void 0:s.seo)==null?void 0:S.default),_=c||"https://blogger.googleusercontent.com/img/a/AVvXsEjpt-tKu2rQZzeRR8eF8TKZ3J1WOZoOozu02EEgMhBkvyOC23wYUAyEC-6ojOQi6-OFDmtBOL1eV33APLz5XzwgJQsfoE7bh6S0N9K_mIEoFNolu-mYOfw4vXRpXYuRNiHHEWYjkC8S4ysOdGzAFeWd3G9ZPhSkzblhDkFR0e-DrXthfYWUhWeeH0R_6cw=s16000",x=`<script async src="https://www.googletagmanager.com/gtag/js?id=G-2BKKWGCXWX"><\/script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-2BKKWGCXWX');<\/script>`,w=l?Uye(l.url,l.title,l.description):"";return`<!DOCTYPE html>
         <html lang="${i}" dir="${f}">
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="icon" type="image/png" href="https://file.gitut.com/data/image/icon.png">
+            <link rel="icon" type="image/png" href="https://blogger.googleusercontent.com/img/a/AVvXsEjpt-tKu2rQZzeRR8eF8TKZ3J1WOZoOozu02EEgMhBkvyOC23wYUAyEC-6ojOQi6-OFDmtBOL1eV33APLz5XzwgJQsfoE7bh6S0N9K_mIEoFNolu-mYOfw4vXRpXYuRNiHHEWYjkC8S4ysOdGzAFeWd3G9ZPhSkzblhDkFR0e-DrXthfYWUhWeeH0R_6cw=s16000">
             <title>${Hr(t)}</title>
             <meta name="description" content="${Hr(e)}">
             
@@ -6920,12 +6920,12 @@ document.addEventListener('DOMContentLoaded', function() {
             ${n}
             ${v}
         </div>
-    `,y=((C=s==null?void 0:s.seo)==null?void 0:C[r])||((S=s==null?void 0:s.seo)==null?void 0:S.default),_=c||"https://file.gitut.com/data/image/icon.png",x=`<script async src="https://www.googletagmanager.com/gtag/js?id=G-2BKKWGCXWX"><\/script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-2BKKWGCXWX');<\/script>`,w=l?d4e(l.url,l.title,l.description):"";return`<!DOCTYPE html>
+    `,y=((C=s==null?void 0:s.seo)==null?void 0:C[r])||((S=s==null?void 0:s.seo)==null?void 0:S.default),_=c||"https://blogger.googleusercontent.com/img/a/AVvXsEjpt-tKu2rQZzeRR8eF8TKZ3J1WOZoOozu02EEgMhBkvyOC23wYUAyEC-6ojOQi6-OFDmtBOL1eV33APLz5XzwgJQsfoE7bh6S0N9K_mIEoFNolu-mYOfw4vXRpXYuRNiHHEWYjkC8S4ysOdGzAFeWd3G9ZPhSkzblhDkFR0e-DrXthfYWUhWeeH0R_6cw=s16000",x=`<script async src="https://www.googletagmanager.com/gtag/js?id=G-2BKKWGCXWX"><\/script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-2BKKWGCXWX');<\/script>`,w=l?d4e(l.url,l.title,l.description):"";return`<!DOCTYPE html>
         <html lang="${i}" dir="${f}">
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="icon" type="image/png" href="https://file.gitut.com/data/image/icon.png">
+            <link rel="icon" type="image/png" href="https://blogger.googleusercontent.com/img/a/AVvXsEjpt-tKu2rQZzeRR8eF8TKZ3J1WOZoOozu02EEgMhBkvyOC23wYUAyEC-6ojOQi6-OFDmtBOL1eV33APLz5XzwgJQsfoE7bh6S0N9K_mIEoFNolu-mYOfw4vXRpXYuRNiHHEWYjkC8S4ysOdGzAFeWd3G9ZPhSkzblhDkFR0e-DrXthfYWUhWeeH0R_6cw=s16000">
             <title>${$n(t)}</title>
             <meta name="description" content="${$n(e)}">
             
