@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const handleCopyFallback = (text, btn) => {
             navigator.clipboard.writeText(text).then(() => {
                 const originalContent = btn.innerHTML;
-                btn.innerHTML = '<span class="text-xs">تم النسخ!</span>';
+                btn.innerHTML = '<span class="text-xs">コピーされました!</span>';
                 setTimeout(() => {
                     btn.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 1h-12c-1.1 0-2 .9-2 2v14h2v-14h12v-2zm3 4h-11c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2v-14c0-1.1-.9-2-2-2zm0 16h-11v-14h11v14z"/></svg>`;
                 }, 2000);
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         })
                     ]).then(() => {
                         const originalContent = button.innerHTML;
-                        button.innerHTML = '<span class="text-xs">تم النسخ!</span>';
+                        button.innerHTML = '<span class="text-xs">コピーされました!</span>';
                         setTimeout(() => {
                             button.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 1h-12c-1.1 0-2 .9-2 2v14h2v-14h12v-2zm3 4h-11c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2v-14c0-1.1-.9-2-2-2zm0 16h-11v-14h11v14z"/></svg>`;
                         }, 2000);
