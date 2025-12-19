@@ -6522,12 +6522,12 @@ document.addEventListener('DOMContentLoaded', function() {
             ${t}
             ${v}
         </div>
-    `,g=((T=a==null?void 0:a.seo)==null?void 0:T[r])||((D=a==null?void 0:a.seo)==null?void 0:D.default),b=u||"https://file.gitut.com/data/image/icon.png",_=`<script async src="https://www.googletagmanager.com/gtag/js?id=G-2BKKWGCXWX"><\/script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-2BKKWGCXWX');<\/script>`,w=l?Age(l.url,l.title,l.description):"";return`<!DOCTYPE html>
+    `,g=((T=a==null?void 0:a.seo)==null?void 0:T[r])||((D=a==null?void 0:a.seo)==null?void 0:D.default),b=u||"https://blogger.googleusercontent.com/img/a/AVvXsEjIwicMdgBHGgVbeX1gPl9n9PhWFzZvLJ5hiGy923-34GGSM59Q5EwGmpmUibE3dexwLH6tk_Y_3QYLIUZC2YA9L3xhY4XVNVW1HCi1UoZhNv-RYbnOjtxMIXo014Yg4Eqv9bCQ5d6z4j4NnKoE7fpQvW7Dla3Y5QFk0N0I28kNCfnDBGWXq0Rx5VC7f58=s16000",_=`<script async src="https://www.googletagmanager.com/gtag/js?id=G-2BKKWGCXWX"><\/script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-2BKKWGCXWX');<\/script>`,w=l?Age(l.url,l.title,l.description):"";return`<!DOCTYPE html>
         <html lang="${i}" dir="${h}">
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="icon" type="image/png" href="https://file.gitut.com/data/image/icon.png">
+            <link rel="icon" type="image/png" href="https://blogger.googleusercontent.com/img/a/AVvXsEjIwicMdgBHGgVbeX1gPl9n9PhWFzZvLJ5hiGy923-34GGSM59Q5EwGmpmUibE3dexwLH6tk_Y_3QYLIUZC2YA9L3xhY4XVNVW1HCi1UoZhNv-RYbnOjtxMIXo014Yg4Eqv9bCQ5d6z4j4NnKoE7fpQvW7Dla3Y5QFk0N0I28kNCfnDBGWXq0Rx5VC7f58=s16000">
             <title>${Xa(n)}</title>
             <meta name="description" content="${Xa(e)}">
             
@@ -6728,7 +6728,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ${t}
             ${v}
         </div>
-    `,g=((D=a==null?void 0:a.seo)==null?void 0:D[r])||((A=a==null?void 0:a.seo)==null?void 0:A.default),b=u||"https://file.gitut.com/data/image/icon.png",_=`<script async src="https://www.googletagmanager.com/gtag/js?id=G-2BKKWGCXWX"><\/script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-2BKKWGCXWX');<\/script>`,w=l?t1e(l.url,l.title,l.description,i):"",T=n1e(i);return`<!DOCTYPE html>
+    `,g=((D=a==null?void 0:a.seo)==null?void 0:D[r])||((A=a==null?void 0:a.seo)==null?void 0:A.default),b=u||"https://blogger.googleusercontent.com/img/a/AVvXsEjIwicMdgBHGgVbeX1gPl9n9PhWFzZvLJ5hiGy923-34GGSM59Q5EwGmpmUibE3dexwLH6tk_Y_3QYLIUZC2YA9L3xhY4XVNVW1HCi1UoZhNv-RYbnOjtxMIXo014Yg4Eqv9bCQ5d6z4j4NnKoE7fpQvW7Dla3Y5QFk0N0I28kNCfnDBGWXq0Rx5VC7f58=s16000",_=`<script async src="https://www.googletagmanager.com/gtag/js?id=G-2BKKWGCXWX"><\/script><script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-2BKKWGCXWX');<\/script>`,w=l?t1e(l.url,l.title,l.description,i):"",T=n1e(i);return`<!DOCTYPE html>
         <html lang="${i}" dir="${h}">
         <head>
             <meta charset="UTF-8">
