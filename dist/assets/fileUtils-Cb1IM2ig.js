@@ -1,0 +1,1 @@
+const n="https://pub-f25b4129424647319985a15a082e6685.r2.dev",a=t=>t?t.startsWith("http://")||t.startsWith("https://")||t.startsWith("data:")?t:`${n}/${t.startsWith("/")?t.substring(1):t}`:"";async function c(t,s,r){const e=await(await fetch(t)).blob();return new File([e],s,{type:r})}export{a as c,c as d};
